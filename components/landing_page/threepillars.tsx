@@ -1,5 +1,5 @@
 
-
+import RevealOnScroll from '../../components/RevealOnScroll';
 import Image from 'next/image';
 import icon1 from '../../public/Container.png'
 import icon2 from '../../public/Container (1).png'
@@ -39,7 +39,10 @@ const ThreePillars = () => {
       {/* 2. The Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {pillars.map((pillar, index) => (
-          <div 
+         
+
+          <RevealOnScroll key={pillar.title} threshold={0.3}>
+             <div 
             key={index} 
             className="
               bg-white p-8 rounded-3xl shadow-sm border border-slate-100/50
@@ -51,8 +54,8 @@ const ThreePillars = () => {
               <Image
               src={pillar.iconType}
               alt='icon'
-              height={64}
-              width={64}
+              height={45}
+              width={45}
               />
             </div>
 
@@ -64,6 +67,7 @@ const ThreePillars = () => {
               {pillar.text}
             </p>
           </div>
+        </RevealOnScroll>
         ))}
       </div>
     </div>
