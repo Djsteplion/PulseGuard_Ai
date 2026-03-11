@@ -42,10 +42,11 @@ const NavBar = () => {
       </div>
       <div className="flex flex-row items-center  gap-2 md:gap-3">
         <Link href ='/authentication' className="text-white text-[10px] bg-blue-500 px-2.5 py-1.5 rounded-sm md:px-4 md:py-2 lg:text-[18px]  hover:bg-blue-700 hover:shadow-2xl active:scale-95 active:bg-blue-700 transition-all">Login</Link>
-        <Link href ="../../../pages/authentication/Authentication" className="text-white text-[10px] bg-blue-500 px-2.5 py-1.5 rounded-sm md:px-4 md:py-2 lg:text-[18px]  hover:bg-blue-700 hover:shadow-2xl active:scale-95 active:bg-blue-700 transition-all">Sign Up</Link>
+        <Link href ="/authentication" className="text-white text-[10px] bg-blue-500 px-2.5 py-1.5 rounded-sm md:px-4 md:py-2 lg:text-[18px]  hover:bg-blue-700 hover:shadow-2xl active:scale-95 active:bg-blue-700 transition-all">Sign Up</Link>
       </div>
     </div>
   )
 }
+
 
 export default NavBar
