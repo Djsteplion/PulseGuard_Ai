@@ -9,7 +9,7 @@ const Pillars = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-3 md:gap-6 py-12 lg:py-20">
+    <div className="flex flex-wrap justify-center gap-3 md:gap-6 py-12 lg:py-20 w-full bg-slate-50">
         {badges.map((badge, index) => (
           <div 
             key={index} 
@@ -26,5 +26,6 @@ const Pillars = () => {
     </div>
   )
 }
+
 
 export default Pillars
