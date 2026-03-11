@@ -25,7 +25,7 @@ const ThreePillars = () => {
   ];
 
   return (
-    <div className="py-24 max-w-7xl mx-auto px-6">
+    <div className="py-24 max-w-7xl mx-auto px-6 w-full bg-slate-50">
       {/* 1. The Heading */}
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
@@ -73,5 +73,6 @@ const ThreePillars = () => {
     </div>
   );
 };
+
 
 export default ThreePillars;
