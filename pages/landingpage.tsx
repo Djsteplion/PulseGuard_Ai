@@ -19,7 +19,7 @@ const LandingPage = () => {
           <Pillars/>
         </RevealOnScroll>
 
-        <RevealOnScroll threshold={0.25}>
+        <RevealOnScroll threshold={0.2}>
           <ThreePillars/>
         </RevealOnScroll>
 
@@ -31,5 +31,6 @@ const LandingPage = () => {
     </div>
   )
 }
+
 
 export default LandingPage
